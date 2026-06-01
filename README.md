@@ -1,8 +1,8 @@
 # Rocket Flight Trajectory Simulator
 
 A 1-DOF rocket flight simulator written in MATLAB (base, no toolboxes). It models a
-rocket's full vertical flight — launch, powered ascent, burnout, coast, apogee, and
-parachute recovery — and includes a static-stability check and a motor-selection study.
+rocket's full vertical flight, launch, powered ascent, burnout, coast, apogee, and
+parachute recovery, and includes a static-stability check and a motor-selection study.
 Validated against OpenRocket.
 
 ## What it does
@@ -52,7 +52,7 @@ With total impulse matched to the real motor:
 | Total impulse (N·s) | 165 | 161 | +2.5% |
 
 Max velocity and total impulse match closely. Apogee and peak acceleration run higher,
-consistently — this traces to the simplifications in the model: a fixed drag coefficient
+consistently, this traces to the simplifications in the model: a fixed drag coefficient
 (versus OpenRocket's Mach-dependent drag, which lets my rocket coast higher) and a
 synthetic thrust curve that front-loads the burn more than the real motor.
 
@@ -62,6 +62,4 @@ synthetic thrust curve that front-loads the burn more than the real motor.
 - Fixed drag coefficient rather than Mach-dependent
 - Synthetic thrust curve; real .eng motor data would improve the acceleration match
 - Stability uses an estimated CG; real CAD mass properties would make it exact
-- Fixed drag coefficient rather than Mach-dependent
-- Synthetic thrust curve; real `.eng` motor data would improve the acceleration match
-- Stability uses an estimated CG; real CAD mass properties would make it exact
+  
