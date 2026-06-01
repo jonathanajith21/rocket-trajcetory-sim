@@ -58,7 +58,7 @@ synthetic thrust curve that front-loads the burn more than the real motor.
 
 ## Limitations and next steps
 
-- 1-DOF only — vertical flight, no wind or off-vertical launch
+- 1-DOF only (vertical flight, no wind or off-vertical launch)
 - Fixed drag coefficient rather than Mach-dependent
 - Synthetic thrust curve; real .eng motor data would improve the acceleration match
 - Stability uses an estimated CG; real CAD mass properties would make it exact
