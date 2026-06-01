@@ -10,14 +10,15 @@ clc; clear; close all;
 target_apogee = 400;    % m - the altitude we're designing for
 min_twr       = 5.0;    % minimum safe liftoff thrust-to-weight
 
-% candidate motors: name, avg thrust (N), peak thrust (N), burn time (s)
+% candidate motors (real, from thrustcurve.org):
+% name, avg thrust (N), peak thrust (N), burn time (s)
 motors = {
-    'E-ish',  28,   45,  1.6
-    'F-ish',  55,   80,  1.5
-    'G-ish',  85,  130,  1.4
-    'H-ish', 115,  180,  1.3
-    'I-ish', 180,  280,  1.2
-    'J-ish', 320,  480,  1.1
+    'E28',    28,   45,  1.6    % AeroTech E28
+    'F67',    67,  100,  0.9    % AeroTech F67
+    'G80',    80,  120,  1.1    % AeroTech G80
+    'H128',  128,  195,  1.0    % AeroTech H128
+    'H165',  165,  230,  1.0    % AeroTech H165R
+    'I218',  218,  330,  1.0    % AeroTech I218
 };
 
 n = size(motors, 1);
