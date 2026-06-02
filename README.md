@@ -25,7 +25,7 @@ with `ode45` to track altitude, velocity, and mass over the flight. It includes:
 | File | Purpose |
 |------|---------|
 | `define_rocket.m` | Rocket, motor, and environment parameters |
-| `simulate_flight.m` | The physics engine — runs a flight, returns a results struct |
+| `simulate_flight.m` | The physics engine- runs a flight, returns a results struct |
 | `rocket_trajectory_simulator.m` | Single-flight run: prints a summary and six plots |
 | `motor_selection_study.m` | Sweeps several motors to find the best fit for a target apogee |
 | `define_rocket_validation.m` | Parameters matched to an OpenRocket build (AeroTech H165R) |
