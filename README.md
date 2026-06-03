@@ -31,14 +31,6 @@ with `ode45` to track altitude, velocity, and mass over the flight. It includes:
 | `define_rocket_validation.m` | Parameters matched to an OpenRocket build (AeroTech H165R) |
 | `run_validation.m` | Compares the simulator's output to OpenRocket |
 
-## How to run
-
-Keep all files in the same folder, set it as your MATLAB Current Folder, then:
-
-- Single flight + plots: run `rocket_trajectory_simulator.m`
-- Motor-selection study: run `motor_selection_study.m`
-- Validation against OpenRocket: run `run_validation.m`
-
 ## Validation
 
 I rebuilt the same rocket in OpenRocket with an AeroTech H165R motor and compared.
